@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "./question.dart";
 
 // void main() {
 //   runApp(MyApp());
@@ -32,7 +33,7 @@ class MyAppState extends State<MyApp> {
       home: Scaffold(
         appBar: AppBar(title: Text("my first app")),
         body: Column(children: <Widget>[
-          Text(
+          Question(
             questions[index],
           ),
           ElevatedButton(onPressed: answerQ, child: Text('click here')),
@@ -45,4 +46,4 @@ class MyAppState extends State<MyApp> {
 }
 
 
-// 22. using private props
+//026 Official Docs & The Widget Catalog
